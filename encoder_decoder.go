@@ -25,7 +25,6 @@ func encode(e encoder, metricRegistry metrics.Registry) ([]byte, error) {
 
 	var prepEnc prepEncoder
 	var realEnc realEncoder
-	var deadEnv prepEncoder
 
 	err := e.encode(&prepEnc)
 	if err != nil {
